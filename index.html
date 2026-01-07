@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pooja Wagaskar | Freelance Medical Writer</title>
+
+<style>
+:root{
+  --primary:#6fb1a6;
+  --accent:#8faadc;
+  --light:#f4f9f8;
+  --dark:#2e3a3a;
+  --card:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
+}
+
+body{
+  background:linear-gradient(120deg,var(--light),#eef6f5);
+  color:var(--dark);
+  line-height:1.7;
+  scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(120deg,var(--primary),var(--accent));
+  color:#fff;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.profile{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.profile img{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  border:3px solid #fff;
+  object-fit:cover;
+}
+
+nav a{
+  color:#fff;
+  margin-left:18px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{text-decoration:underline}
+
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 40px;
+  opacity:0;
+  transform:translateY(40px);
+  transition:.8s ease;
+}
+
+section.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+h2{
+  color:var(--primary);
+  font-size:2rem;
+  margin-bottom:25px;
+  border-left:5px solid var(--accent);
+  padding-left:12px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  margin-bottom:25px;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  transition:.3s;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+ul{list-style:none}
+ul li::before{
+  content:"• ";
+  color:var(--primary);
+  font-weight:bold;
+}
+
+/* CONTACT */
+form{display:grid;gap:15px}
+input,textarea{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+button{
+  background:linear-gradient(120deg,var(--primary),var(--accent));
+  color:#fff;
+  border:none;
+  padding:12px;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="profile">
+    <img src="profile.jpg" alt="Pooja Wagaskar">
+    <div>
+      <h1>Pooja Wagaskar</h1>
+      <p>Freelance Medical Writer</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#samples">Writing Samples</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+I’m a medical writer who loves turning complex research data into clear, evidence-based content for healthcare professionals and patients. I enjoy exploring research, reading scientific studies, and transforming insights into impactful stories.
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Technical Skills</h3>
+<ul>
+<li>Medical & scientific writing</li>
+<li>Manuscript preparation</li>
+<li>Literature review & research analysis</li>
+<li>Pharmacological screening</li>
+<li>Molecular docking</li>
+<li>ICH-E3, FDA & GCP guidelines</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tools</h3>
+<ul>
+<li>MS Office</li>
+<li>EndNote, Mendeley</li>
+<li>PubMed, ScienceDirect</li>
+<li>AutoDock, BioRender</li>
+<li>Network Pharmacology</li>
+<li>Power BI</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Soft Skills</h3>
+<ul>
+<li>Excellent written & verbal communication</li>
+<li>Proofreading & editing</li>
+<li>Team collaboration</li>
+<li>Analytical thinking</li>
+<li>Time management & attention to detail</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Others</h3>
+<ul>
+<li>Python</li>
+<li>Machine Learning</li>
+<li>Statistics</li>
+<li>Tableau</li>
+<li>AWS</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Languages</h3>
+<ul>
+<li>English</li>
+<li>Marathi</li>
+<li>Hindi</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+
+<div class="card"><h3>Medical Communication</h3><ul><li>Slide decks</li><li>Abstracts</li><li>Posters</li><li>Manuscripts</li><li>Blog posts</li></ul></div>
+
+<div class="card"><h3>Medical Education</h3><ul><li>E-learning modules</li><li>Textbooks</li><li>CME</li></ul></div>
+
+<div class="card"><h3>Scientific Writing</h3><ul><li>Research papers</li><li>Journal manuscripts</li><li>Review articles</li></ul></div>
+
+<div class="card"><h3>Health Journalism</h3><ul><li>Blogs</li><li>Web content</li><li>Newsletters</li><li>Patient education material</li></ul></div>
+
+<div class="card"><h3>Academic Writing</h3><ul><li>Literature review</li><li>Thesis</li><li>Grant proposals</li></ul></div>
+
+</div>
+</section>
+
+<section id="samples">
+<h2>Writing Samples</h2>
+
+<div class="card">
+<strong>The link between oral health and neurodegeneration</strong><br>
+Inflammopharmacology (2025) | IF 5.3 | Q1<br>
+<a href="https://doi.org/10.1007/s10787-025-01888-7" target="_blank">View Publication</a>
+</div>
+
+<div class="card">
+<strong>Therapeutic potential of third molar-derived dental pulp stem cells in Alzheimer’s disease</strong><br>
+Elsevier | IF 12.4 | CiteScore 20.2 | Q1<br>
+<a href="https://pubmed.ncbi.nlm.nih.gov/41308841/" target="_blank">View on PubMed</a>
+</div>
+
+</section>
+
+<section id="testimonials">
+<h2>Testimonials</h2>
+<div class="grid">
+
+<div class="card">
+“Pooja is an insightful and dedicated researcher with strong academic writing skills.”  
+<br><strong>— Sayali Gaikwad (Pharmacology)</strong><br>
+<a href="https://www.linkedin.com/in/sayali-gaikwad-1bb35731b" target="_blank">LinkedIn</a>
+</div>
+
+<div class="card">
+“She simplifies clinical information while maintaining scientific accuracy.”  
+<br><strong>— Dr. Bhagyashree Deshmukh, MBBS, MS (OBGY)</strong>
+</div>
+
+<div class="card">
+“She is patient, dedicated, and very detail-oriented.”  
+<br><strong>— Monika Wagaskar, BPTh, MPT</strong><br>
+<a href="https://www.linkedin.com/in/dr-monika-wagaskar-pt-7a5785270" target="_blank">LinkedIn</a>
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<strong>M.Pharm (Pharmacology)</strong><br>
+Dr. D.Y. Patil Institute, Pune (2024–2026)<br><br>
+<strong>B.Pharm</strong><br>
+SPPU (2020–2024) | CGPA: 8.24
+</div>
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="card">
+<ul>
+<li>GPAT 2024 – AIR 2919</li>
+<li>NIPER JEE 2024 – AIR 1086</li>
+<li>CUET PG 2024 – AIR 115</li>
+<li>Bharati Vidyapeeth CET 2024 – AIR 53</li>
+</ul>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+<br>
+<p>Email: <a href="mailto:poojawagaskar0707@gmail.com">poojawagaskar0707@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pooja-w-23554b335" target="_blank">Profile</a></p>
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 Pooja Wagaskar | Freelance Medical Writer
+</footer>
+
+<script>
+const sections=document.querySelectorAll("section");
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.add("visible")}
+ })
+});
+sections.forEach(section=>observer.observe(section));
+</script>
+
+</body>
+</html>
